@@ -16,5 +16,10 @@ One stop place for code submissions for EECE5155 Project work
 	$ ./bake.py download
 	$ ./bake.py build
 	```
-4. etc....
-
+4. `cd ..`
+5. `cd ns-3.25`
+6. 	```bash
+	./waf configure`
+	./waf
+	./waf --run scratch/<filename>
+	```
