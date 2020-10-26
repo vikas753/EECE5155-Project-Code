@@ -58,4 +58,4 @@
 	1.	Individually find tutorials on simulations for the topologies on NS-3 
 	
 ## TO-DO
-[ ] Everyone get https://github.com/subinjp/edgecomputing/ example topology working on their own machines (NLT 28 October meeting)
+-[ ] Everyone get https://github.com/subinjp/edgecomputing/ example topology working on their own machines (NLT 28 October meeting)
