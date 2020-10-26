@@ -15,7 +15,7 @@
 4. `cd ..`
 5. `cd ns-3.25`
 6. 	```bash
-	./waf configure`
+	./waf configure
 	./waf
 	./waf --run scratch/<filename>
 	```
