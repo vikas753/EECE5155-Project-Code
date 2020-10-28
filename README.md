@@ -17,6 +17,7 @@
 7. All gateways in the fog layer are point-to-point devices 
 
 ## Single Weapon System Container/Edge Network Topology
+```
       n0                                      n1            n2
   +---------+                             +--------+     +--------+
   | UDP     |          fog node           | UDP    |     | UDP    |
@@ -30,6 +31,7 @@
        |              |    |   |               |               |
        ================    |   =================               | 
                            =====================================
+```
 
 ## Roadmap
 1.	Project goals and objectives
