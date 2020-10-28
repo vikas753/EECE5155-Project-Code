@@ -34,6 +34,16 @@
                            =====================================
 ```
 
+## Fog Layer Topology
+```
+n0 -------------- n1
+ \                /
+  \              /
+   \            /
+         n2
+point-to-point links
+```
+
 ## Roadmap
 1.	Project goals and objectives
 	1.	Simulate multi-layer topology (fog-edge layered network) on NS-3 
