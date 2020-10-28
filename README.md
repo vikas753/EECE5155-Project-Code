@@ -6,7 +6,31 @@
 	./waf
 	./waf --run scratch/<filename>
 	```
-	
+
+## Simulation 
+1. Applications on all nodes (telling node to either compute or send data to another node to compute; specifying processing strength of node; specify data rate (latency) on links)
+2. Two layers of the network (edge layer and fog layer)
+3. Edge layer contains 9 containers of weapon systems; each "weapon system" contains 3 edge devices
+4. All edge devices connect to one gateway on the fog network (3 weapon systems per gateway)
+5. Three gateway devices are on fog network and all are connected to one another
+6. All edge devices within weapon systems, and the link between edge devices and their fog gateway are 6LoWPAN and CSMA
+7. All gateways in the fog layer are point-to-point devices 
+
+## Single Weapon System Container/Edge Network Topology
+      n0                                      n1            n2
+  +---------+                             +--------+     +--------+
+  | UDP     |          fog node           | UDP    |     | UDP    |
+  +---------+    +---------+--------+     +--------+     +--------+
+  | IPv6    |    | IPv6    | IPv6   |     | IPv6   |     | IPv6   |
+  +---------+    +---------+        |     |        |     |        |
+  | 6LoWPAN |    | 6LoWPAN |        |     |        |     |        |
+  +---------+    +---------+--------+     +--------+     +--------+
+  | CSMA    |    | CSMA    | CSMA   |     | CSMA   |     | CSMA   |  
+  +---------+    +---------+--------+     +--------+     +--------+
+       |              |    |   |               |               |
+       ================    |   =================               | 
+                           =====================================
+
 ## Roadmap
 1.	Project goals and objectives
 	1.	Simulate multi-layer topology (fog-edge layered network) on NS-3 
