@@ -7,7 +7,10 @@
 	./waf
 	./waf --run scratch/<filename>
 	```
-
+## Questions for the instructor
+1. How would we run an application on nodes in order to simulate a load (i.e. latency and processing power)? What's the recommended way to implement load balancing on ns-3? (Some ideas we had was editing the ipv6 routing protocol or completing it on the application).
+2. How would we implement..... (reliability protocol) 
+	
 ## Simulation 
 1. Applications on all nodes (telling node to either compute or send data to another node to compute; specifying processing strength of node; specify data rate (latency) on links)
 2. Two layers of the network (edge layer and fog layer)
