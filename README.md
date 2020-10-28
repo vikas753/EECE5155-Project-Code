@@ -1,8 +1,9 @@
 # EECE5155-Project-Code
 
 ## Instructions for running topology
-1. `cd source/ns-3/`
-2. 	```bash
+1. NS-3 installation https://www.nsnam.org/docs/tutorial/html/index.html
+2. `cd source/ns-3/`
+3. 	```bash
 	./waf
 	./waf --run scratch/<filename>
 	```
