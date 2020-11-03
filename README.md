@@ -8,8 +8,14 @@
 	./waf --run scratch/<filename>
 	```
 ## Questions for the instructor
-1. How would we run an application on nodes in order to simulate a load (i.e. latency and processing power)? What's the recommended way to implement load balancing on ns-3? (Some ideas we had was editing the ipv6 routing protocol or completing it on the application).
-2. How would we implement..... (reliability protocol) 
+1. How can we send custom data to nodes on ns-3?
+	develop an application - application layer will talk to the transport layer.
+	What do we have at each layer of our protocols: 6LoWPAN (network layer), 806.4 (physical layer); we want to send our own packets from one node to another node.
+	Nodes will send what is at the application layer. We are using the 6LoWPAN and modifying this to send our own data.
+2. How to use PCAP on 6LoWPAN in ns3?
+	Not all code can incorporate packet tracing. Instead, have stuff logged to file or screen (such as timestamping all packets for when you send and receive it)
+3. Does he recommend utilizing another simulating software?
+	No - utilize NS-3 cause this is utilized for research and industry development.
 	
 ## Simulation 
 1. Applications on all nodes (telling node to either compute or send data to another node to compute; specifying processing strength of node; specify data rate (latency) on links)
